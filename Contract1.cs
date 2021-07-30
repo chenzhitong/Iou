@@ -22,7 +22,7 @@ namespace iou
         /// <summary>
         /// 信用额度，1亿（且不会减少），为了兼容钱包转账时的余额验证
         /// </summary>
-        public static BigInteger BalanceOf() => 100000000;
+        public static BigInteger BalanceOf(UInt160 _) => 100000000;
 
         public static bool Transfer(UInt160 from, UInt160 to, BigInteger amount, object data)
         {
